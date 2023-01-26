@@ -1,10 +1,5 @@
-var inputText = '';
-
-function getInputText() {
-    
-    inputText = document.getElementById("input-text").value;
-}
-
+const inputText = document.getElementById('input-text').value;
+console.log(inputText);
 // console.log(inputText);
 // 'e', 'enter'
 // "i", "imes"
