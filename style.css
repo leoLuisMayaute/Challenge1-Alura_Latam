@@ -5,18 +5,60 @@
 }
 
 body {
-    padding: 2em;
+    background-color: #f2f5fc;
+}
+.container {
+    width: 95%;
+    margin: 1em auto;
 }
 
-main {
+.input-text {
+    margin: 3em auto 10em 0;
     display: flex;
-    margin: 0 auto;
+    align-items: flex-start;
 }
 
-input[type="text"] {
-    padding: 1em;
+::placeholder {
+    color: #0a3871;
+    opacity: 1;
 }
 
-p {
+#input-text {
+    border: none;
+    background-color: #f2f5fc;
+    font-size: 2rem;
+}
+.warning-message {
+    color: #66808d;
+    margin-bottom: 1rem;
     font-size: 0.8rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+.buttons > input {
+    display: block;
+    width: 100%;
+    max-width: 30rem;
+}
+
+.submit-button {
+    padding: 1.3rem;
+    border-radius: 1.3rem;
+    border: none;
+    cursor: pointer;
+}
+
+#cipher-button {
+    background-color: #0a3871;
+    color: #fff;
+}
+
+#uncipher-button {
+    border: 1px solid #0a3871;
+    color: #0a3871;
 }

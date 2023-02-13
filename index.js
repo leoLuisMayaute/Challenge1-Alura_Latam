@@ -1,5 +1,8 @@
 const inputText = document.getElementById('input-text').value;
-console.log(inputText);
+const cipherButton = document.getElementById('cipher-button');
+cipherButton.addEventListener('click', () => {
+    console.log(inputText);
+})
 // console.log(inputText);
 // 'e', 'enter'
 // "i", "imes"

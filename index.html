@@ -4,38 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./style.css">
     <title>Encriptador</title>
 </head>
 <body>
-    <!-- cuadro para ingresar texto -->
-    <!-- cuadro de output de texto -->
-    <!-- boton de cifrar -->
-    <!-- boton de descifrar -->
-    <!-- boton de copiar texto -->
-    <!-- advertencia de solo minusculas y caracteres sin tilde -->
-
-    <!-- header de la pagina con el logo -->
     <header>
-        <img src="/images/logo.png" alt="logo" srcset="">
+        <div class="container"><img src="/images/logo.png" alt="logo" srcset=""></div>
     </header>
         <!-- seccion principal -->
     <main>
         <!-- seccion con el cuadro para ingresar texto -->
-        <section >
+        <section class="container">
                 <form action="">
-                    <label for="input-text"></label>
-                    <input type="text" name="input-text" id="input-text" placeholder="Ingrese el texto aqui">
-                    <box-icon type ="solid" name="error-circle"></box-icon><p>Solo letras minusculas y sin tilde</p>
-                    <input type="submit" value="Encriptar">
-                    <input type="submit" value="Desencriptar">
+                    <div class="input-text">
+                        <label for="input-text" class="input-text">
+                            <input type="text" name="input-text" id="input-text" placeholder="Ingrese el texto aqui">
+                        </label>
+                    </div>
+                    <div>
+                        <p class="warning-message">&#9888; Solo letras minusculas y sin acentos</p>
+                        <div class="buttons">
+                            <input class="submit-button" type="submit" value="Encriptar" id="cipher-button">
+                            <input class="submit-button" type="submit" value="Desencriptar" id="uncipher-button">
+                        </div>
+                    </div>
                 </form>
         </section>
-        <section>
+        <section class="container">
             <textarea name="cipher-text" id="cipher-text" cols="50" rows="30"></textarea>
         </section>
     </main>
-    <script src="./index.js"></script>
+    <script defer src="./index.js"></script>
 </body>
 </html> 
