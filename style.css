@@ -62,3 +62,17 @@ body {
     border: 1px solid #0a3871;
     color: #0a3871;
 }
+
+.response {
+    background-color: #ffffff;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 1.3rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    margin-top: 2.5rem;
+}
+
+b {
+    font-size: 1.5rem;
+}
