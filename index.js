@@ -1,8 +1,14 @@
-const inputText = document.getElementById('input-text').value;
-const cipherButton = document.getElementById('cipher-button');
-cipherButton.addEventListener('click', () => {
-    console.log(inputText);
+const botonEncriptar = document.getElementById('cipher-button');
+
+botonEncriptar.addEventListener('click', e => {
+    console.log(e);
 })
+
+
+
+
+
+
 // console.log(inputText);
 // 'e', 'enter'
 // "i", "imes"
